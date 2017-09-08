@@ -27,7 +27,7 @@ fun searchValue(treasure: String) : Int {
     return value
 }
 
-fun internal() {
+fun findPossibleTreasures() {
 
     (0 until max).forEach { score ->
         possibleTreasures[score] = mutableSetOf()
@@ -54,7 +54,7 @@ fun internal() {
 fun main(args: Array<String>) {
 
     print("Score? ")
-    internal()
+    findPossibleTreasures()
     val score = readLine()!!.toInt()
 
     val possiblesBoxes =
